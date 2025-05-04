@@ -49,10 +49,14 @@ const NavbarDesktop = ({
               >
                 <Link className="nav-link" to="/solutions">Solutions</Link>
                 <div className={`dropdown-menu ${solutionsDropdownOpen ? "show" : ""}`}>
-                  <Link to="/DataAnalysisandBusinessInsights" className="dropdown-item" onClick={() => { setSolutionsDropdownOpen(false); }}>Data Analysis & Business Insights</Link>
-                  <Link to="/IndirectTaxAdvisoryandLitigationSupport" className="dropdown-item" onClick={() => { setSolutionsDropdownOpen(false); }}>Indirect Tax Advisory & Litigation Support</Link>
-                  <Link to="/IndustrySpecificAdvisoryandComplianceSolutions" className="dropdown-item" onClick={() => { setSolutionsDropdownOpen(false); }}>Industry Specific Advisory & Compiance Solutions</Link>
-                  <Link to="/InternalAuditandMISReporting" className="dropdown-item" onClick={() => { setSolutionsDropdownOpen(false); }}>Internal Audit & MIS Reporting</Link>
+                  <Link to="/DataAnalysisandBusinessInsights" className="dropdown-item mb-2" style={{paddingTop:"10px !important"}} onClick={() => { setSolutionsDropdownOpen(false); }}>Data Analysis & Business Insights</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link to="/IndirectTaxAdvisoryandLitigationSupport" className="dropdown-item mb-2" onClick={() => { setSolutionsDropdownOpen(false); }}>Indirect Tax Advisory & Litigation Support</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link to="/IndustrySpecificAdvisoryandComplianceSolutions" className="dropdown-item mb-2" onClick={() => { setSolutionsDropdownOpen(false); }}>Industry Specific Advisory & Compiance Solutions</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link to="/InternalAuditandMISReporting" className="dropdown-item mb-2" onClick={() => { setSolutionsDropdownOpen(false); }}>Internal Audit & MIS Reporting</Link>
+                  <div class="dropdown-divider"></div>
                   <Link to="/OutsourcedAccountingandBookkeeping" className="dropdown-item" onClick={() => { setSolutionsDropdownOpen(false); }}>Outsourced Accounting & Bookkeeping</Link>
                 </div>
               </li>
@@ -67,13 +71,21 @@ const NavbarDesktop = ({
               >
                 <Link className="nav-link" to="/services">Services</Link>
                 <div className={`dropdown-menu ${servicesDropdownOpen ? "show" : ""}`}>
-                  <Link className="dropdown-item" to="/DirectTaxation" onClick={() => {  setServicesDropdownOpen(false); }}>Direct Taxation</Link>
-                  <Link className="dropdown-item" to="/AccountingBookkeeping" onClick={() => {  setServicesDropdownOpen(false); }}>Accounting & Bookkeeping</Link>
-                  <Link className="dropdown-item" to="/AuditAssurance" onClick={() => {  setServicesDropdownOpen(false); }}>Audit & Assurance</Link>
-                  <Link className="dropdown-item" to="/BusinessAdvisory" onClick={() => {  setServicesDropdownOpen(false); }}>Business Advisory</Link>
-                  <Link className="dropdown-item" to="/ForeignExchangeMatters" onClick={() => {  setServicesDropdownOpen(false); }}>Foreign Exchange Matters</Link>
-                  <Link className="dropdown-item" to="/GSTIndirectTaxes" onClick={() => {  setServicesDropdownOpen(false); }}>GST & Indirect Taxes</Link>
-                  <Link className="dropdown-item" to="/InternationalTaxationFEMA" onClick={() => {  setServicesDropdownOpen(false); }}>International Taxation & FEMA</Link>
+                  <Link className="dropdown-item mb-2" to="/DirectTaxation" onClick={() => {  setServicesDropdownOpen(false); }}>Direct Taxation</Link>
+                  <div class="dropdown-divider"></div>
+                  
+                  <Link className="dropdown-item mb-2" to="/AccountingBookkeeping" onClick={() => {  setServicesDropdownOpen(false); }}>Accounting & Bookkeeping</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link className="dropdown-item mb-2" to="/AuditAssurance" onClick={() => {  setServicesDropdownOpen(false); }}>Audit & Assurance</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link className="dropdown-item mb-2" to="/BusinessAdvisory" onClick={() => {  setServicesDropdownOpen(false); }}>Business Advisory</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link className="dropdown-item mb-2" to="/ForeignExchangeMatters" onClick={() => {  setServicesDropdownOpen(false); }}>Foreign Exchange Matters</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link className="dropdown-item mb-2" to="/GSTIndirectTaxes" onClick={() => {  setServicesDropdownOpen(false); }}>GST & Indirect Taxes</Link>
+                  <div class="dropdown-divider"></div>
+                  <Link className="dropdown-item mb-2" to="/InternationalTaxationFEMA" onClick={() => {  setServicesDropdownOpen(false); }}>International Taxation & FEMA</Link>
+                  <div class="dropdown-divider"></div>
                   <Link className="dropdown-item" to="/StartupSMEServices" onClick={() => {  setServicesDropdownOpen(false); }}>Startup & SME Services</Link>
                 </div>
               </li>
