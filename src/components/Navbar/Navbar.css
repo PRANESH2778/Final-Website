@@ -1,0 +1,202 @@
+/* ----- Top Bar (Desktop Only) ----- */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1040;
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .contact-infos span {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.top-bar .contact-infos span svg {
+  margin-right: 5px;
+  color: #FFFFFFAB;
+}
+
+.top-bar .contact-infos a {
+  color: #FFFFFFAB;
+  text-decoration: none;
+}
+
+.top-bar .contact-infos a:hover {
+  color: white;
+}
+
+.top-bar .social-icons a {
+  color: #FFFFFFAB;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.top-bar .social-icons a:hover {
+  color: white;
+}
+.mobile-social-icons {
+  margin-top: 10px;
+}
+
+.mobile-social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.mobile-social-icons a:hover {
+  color: #ffcc00;
+}
+
+
+/* ----- Navbar ----- */
+.navbar {
+  position: fixed;
+  top: 50px; /* height of top-bar */
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: white !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+  color: #192335 !important;
+  font-weight: bold;
+}
+/* Remove Bootstrap default arrow added by .dropdown-toggle */
+.navbar-nav .dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: lightseagreen !important;
+}
+
+/* ----- General Layout Padding ----- */
+body {
+  padding-top: 120px; /* Enough space for top-bar + navbar */
+}
+
+/* ----- Mobile View Styling ----- */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+  .dropdown-item{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+  }
+  .dropdown-item {
+    padding-left: 1.5rem;
+    max-width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid #ddd;
+  }
+  .dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  .dropdown-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    border-left: 3px solid #1d438a;
+  }
+  
+  .dropdown-submenu .dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    
+    
+  }
+  
+  .dropdown-submenu .dropdown-item:hover {
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-arrow {
+    font-size: 14px;
+    margin-left: auto;
+  }
+  
+  .top-bar {
+    display: none;
+  }
+
+  .navbar {
+    top: 0;
+  }
+
+  body {
+    padding-top: 70px; /* Only navbar height in mobile */
+  }
+
+  .mobile-contact {
+    padding: 10px;
+    background-color: #003366;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-contact svg {
+    margin-right: 5px;
+    color: #ffcc00;
+  }
+
+  .mobile-contact a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-contact a:hover {
+    text-decoration: underline;
+  }
+}

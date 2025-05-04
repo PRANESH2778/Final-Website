@@ -1,0 +1,110 @@
+.sol-solutions-page {
+  padding: 20px;
+}
+
+.sol-solutions-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sol-solutions-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #192335;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.sol-solutions-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.sol-solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.sol-solution-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sol-solution-card:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sol-solution-image-container {
+  flex: 1;
+  max-width: 300px;
+}
+
+.sol-solution-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.sol-solution-details {
+  flex: 2;
+  padding: 40px;
+}
+
+.sol-solution-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.sol-solution-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sol-solution-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.sol-service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sol-service-item {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.sol-tick {
+  color: #28a745;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+.sol-solution-card.sol-reverse{
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px){
+  .sol-solution-card,.sol-solution-card.sol-reverse{
+    flex-direction: column;
+  }
+  .sol-solution-details{
+    padding: 20px;
+  }
+}

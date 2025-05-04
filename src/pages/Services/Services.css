@@ -1,0 +1,90 @@
+.srv-services-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.srv-page-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #192335;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.srv-service-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.srv-service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.srv-service-image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.srv-service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.srv-service-details {
+  flex: 2;
+  padding: 40px;
+}
+
+.srv-service-title {
+  font-size: 1.5rem;
+  color: #192335;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.srv-service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.srv-service-item {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.srv-tick {
+  color: #28a745;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+/* Alternate layout */
+.srv-service-card.srv-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .srv-service-card,
+  .srv-service-card.srv-reverse {
+    flex-direction: column;
+  }
+
+  .srv-service-details {
+    padding: 20px;
+  }
+}

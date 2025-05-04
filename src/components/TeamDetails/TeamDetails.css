@@ -1,0 +1,148 @@
+/* General container styling */
+.team-main-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  /* Title styling */
+  .team-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #192335;
+    text-transform: uppercase;
+  }
+  
+  /* Grid layout for team cards */
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card styling */
+  .team-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image styling */
+  .team-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Name and title */
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444444;
+    margin-bottom: 10px;
+  }
+  
+  .team-title-small {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Icon section */
+  .team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+ 
+  
+  /* Know More button */
+  .know-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #3b82f6;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .team-card {
+      width: 100%;
+      max-width: 95%;
+    }
+  
+    .team-main-title {
+      font-size: 2rem;
+    }
+  
+    .team-name {
+      font-size: 1.3rem;
+    }
+  
+    .team-title-small {
+      font-size: 0.9rem;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-container {
+      padding: 15px;
+    }
+  
+    .team-main-title {
+      font-size: 1.4rem;
+    }
+  
+    .team-card {
+      padding: 15px;
+    }
+  
+    .team-name {
+      font-size: 1.2rem;
+    }
+  
+    .team-title-small {
+      font-size: 0.85rem;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,173 @@
+/* Container Styling */
+.team-container {
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  .team-section-title {
+    margin-top: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .team-title {
+    font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #192335;
+  text-transform: uppercase;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Image Styling */
+  .card-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image:hover img {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-image:hover .card-overlay {
+    opacity: 1;
+  }
+  .card-overlay p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #f9f9f9;
+  }
+  .card-info{
+    margin-top: 1rem;
+  }
+  .specializations {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .specializations li {
+    margin-bottom: 8px;
+  }
+  
+  .card-overlay .read-more {
+    color: #facc15; /* Yellow color */
+    font-weight: bold;
+    /* padding: 5px 10px;
+    border: 1px solid #facc15; */
+    /* border-radius: 5px; */
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .card-overlay .read-more:hover {
+    background: #facc15;
+    color: #1e3a8a;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 500px;
+    max-width: 90%;
+    max-height: 80vh;           /* ✅ Limit the height */
+    overflow-y: auto;  
+    border-radius: 10px;
+    text-align: left;
+  }
+  .modal-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  .modal-content h2 {
+    color: #1e3a8a;
+  }
+  
+  .modal-content p {
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .modal-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  

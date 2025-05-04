@@ -1,0 +1,63 @@
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    color: #192335;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-us p {
+    font-size: 1.2rem;
+    color: #444444;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card svg {
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  @media (max-width: 480px) {
+    .why-choose-us h2{
+      font-size: 1.4rem;
+    }
+    .why-choose-us p{
+      font-size: 0.95rem;
+    }
+  }

@@ -1,0 +1,176 @@
+.aboutcontainer {
+  padding: 60px 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+.about-section-home h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2b3d;
+}
+
+.about-section-home h3 {
+  font-size: 1.5rem;
+  color: #324566;
+  margin-bottom: 15px;
+}
+
+.about-section-home p {
+  font-size: 1.1rem;
+  color: #4f4f4f;
+  line-height: 1.6;
+}
+
+.read-more-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #1f2b3d;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #324566;
+}
+
+/* Culture Section */
+.cultureSection {
+  background: #ffffff;
+  padding: 50px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cultureSection h2 {
+  font-size: 1.8rem;
+  color: #1f2b3d;
+  margin-bottom: 20px;
+}
+
+.culture-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.culture-list li {
+  background: #f3f3f3;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.culture-list li:hover {
+  transform: translateY(-4px);
+}
+
+.culture-list .icon {
+  color: #1f2b3d;
+}
+
+/* Careers Section */
+.careersSection {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.careersSection h2 {
+  font-size: 1.8rem;
+  color: #1f2b3d;
+  margin-bottom: 20px;
+}
+
+.careersSection p {
+  font-size: 1.1rem;
+  color: #4f4f4f;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-section-home h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section-home p {
+    font-size: 1rem;
+  }
+
+  .cultureSection h2, .careersSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .culture-list li {
+    font-size: 1rem;
+  }
+}
