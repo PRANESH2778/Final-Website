@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
-
+import logoImg from '../../assets/logo2.jpg'
 const NavbarDesktop = ({
   servicesDropdownOpen,
   setServicesDropdownOpen,
@@ -34,7 +34,11 @@ const NavbarDesktop = ({
 
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <Link className="navbar-brand" to="/" onClick={closeNavbar}>Navbar</Link>
+          {/* <Link className="navbar-brand" to="/" onClick={closeNavbar}>Navbar</Link> */}
+          <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+  <img src={logoImg} alt="Logo" height="50" />
+</Link>
+
           <div className="navbar-collapse">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item"><Link className="nav-link" to="/" onClick={closeNavbar}>Home</Link></li>

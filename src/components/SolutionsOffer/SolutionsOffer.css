@@ -1,7 +1,7 @@
 .solutionOffer-container {
   padding: 2rem;
   text-align: center;
-  background: rgb(240, 240, 240);
+  background: linear-gradient(rgb(247, 249, 252), rgb(232, 239, 247));
   color: rgb(44, 62, 80);
 }
 

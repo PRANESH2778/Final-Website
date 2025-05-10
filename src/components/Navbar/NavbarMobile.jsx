@@ -5,6 +5,7 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
+import logoImg from '../../assets/logo2.jpg'
 
 const NavbarMobile = ({
   isCollapsed,
@@ -30,9 +31,13 @@ const NavbarMobile = ({
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+          {/* <Link className="navbar-brand" to="/" onClick={closeNavbar}>
             Navbar
-          </Link>
+          </Link> */}
+          <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+  <img src={logoImg} alt="Logo" height="50" />
+</Link>
+
           <button
             className="navbar-toggler"
             type="button"

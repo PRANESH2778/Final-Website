@@ -32,8 +32,8 @@ const Footer = () => {
         <div className="section">
           <h3 className="footer-title">Contact Us</h3>
           <p>📍 316 Homeland City, Opp.<br></br> Reliance Foundation School, Surat</p>
-          <p>📞 0261-4531968</p>
-          <p>📧 abandco.surat@gmail.com</p>
+          <p className='clickable'>📞 0261-4531968</p>
+          <p className='clickable'>📧 abandco.surat@gmail.com</p>
           <p className="fab fa-whatsapp"> <a href="https://wa.me/919586737879" target="_blank" rel="noopener noreferrer" >+91-95867-37879</a></p><br></br>
           <p className="fab fa-whatsapp"> <a href="https://wa.me/918012139016" target="_blank" rel="noopener noreferrer">+91-80121-39016</a></p>
         </div>

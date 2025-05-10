@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "./TeamDetails.css";
+import AjayImg from "../../assets/Ajay.jpg";
+import NirajImg from "../../assets/Niraj.jpg";
+import ShashankImg from "../../assets/Shashank.jpg";
+
 
 const TeamDetails = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -16,7 +20,7 @@ const TeamDetails = () => {
           title: "B.com, ACA, FAFD, Cer. Conc. Auditor",
           description:
             "Avinash Gupta is a meritorious chartered accountant who graduated with honors in commerce...",
-          image: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww", // Replace with your API response
+          image: AjayImg, // Replace with your API response
           linkedin: "https://linkedin.com/in/avinashgupta",
           email: "avinash@example.com",
           phone: "+91-9876543210",
@@ -26,7 +30,7 @@ const TeamDetails = () => {
           title: "B.com, ACA, DISA, Cer. Conc. Auditor",
           description:
             "Uttam Patel specializes in international tax, company law matters, IFRS, and related work...",
-          image: "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fHww", // Replace with your API response
+          image: NirajImg,
           linkedin: "https://linkedin.com/in/uttampatel",
           email: "uttam@example.com",
           phone: "+91-9876543220",

@@ -12,6 +12,10 @@
   display: flex;
   align-items: center;
 }
+.navbar-brand img {
+  max-height: 50px;
+  object-fit: contain;
+}
 
 .top-bar .contact-infos span {
   margin-right: 20px;
@@ -21,26 +25,26 @@
 
 .top-bar .contact-infos span svg {
   margin-right: 5px;
-  color: #FFFFFFAB;
+  color: white;
 }
 
 .top-bar .contact-infos a {
-  color: #FFFFFFAB;
+  color: white;
   text-decoration: none;
 }
 
 .top-bar .contact-infos a:hover {
-  color: white;
+  color: #a8cf45;
 }
 
 .top-bar .social-icons a {
-  color: #FFFFFFAB;
+  color: white;
   margin-left: 10px;
   font-size: 16px;
 }
 
 .top-bar .social-icons a:hover {
-  color: white;
+  color: #a8cf45;
 }
 .mobile-social-icons {
   margin-top: 10px;
@@ -60,7 +64,7 @@
 /* ----- Navbar ----- */
 .navbar {
   position: fixed;
-  top: 50px; /* height of top-bar */
+  top: 44px; /* height of top-bar */
   left: 0;
   width: 100%;
   z-index: 1030;
@@ -203,3 +207,9 @@ body {
     text-decoration: underline;
   }
 }
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-height: 35px;
+  }
+}
+

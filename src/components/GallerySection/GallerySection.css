@@ -1,7 +1,7 @@
 /* General styling for the gallery section */
 .gallery-section {
     padding: 50px 20px;
-    background-color: #f4f4f9;
+    background-color: linear-gradient(rgb(247, 249, 252), rgb(232, 239, 247));
     text-align: center;
   }
   
@@ -24,7 +24,7 @@
   .gallery-item-container {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust as per your preference */
+    height: 500px; /* Adjust as per your preference */
     overflow: hidden;
     border-radius: 10px;
   }
@@ -106,5 +106,17 @@
     }
     .gallery-section p{
       font-size: 0.95rem;
+    }
+    .gallery-item-container {
+      position: relative;
+      width: 100%;
+      height: 400px; /* Adjust as per your preference */
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
     }
   }

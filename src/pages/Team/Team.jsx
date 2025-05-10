@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Team.css";
-
+import AjayImg from "../../assets/Ajay.jpg";
+import NirajImg from "../../assets/Niraj.jpg";
+import ShashankImg from "../../assets/Shashank.jpg";
 const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
 
@@ -10,8 +12,7 @@ const Team = () => {
       id: 1,
       name: "CA Ajay Agrawal",
       title: "B.com, ACA, FAFD, Cer. Conc. Auditor",
-      image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww",
+      image:AjayImg,
       shortDescription:
         "Expert in GST litigation and internal audits, helps businesses navigate complex tax issues while strengthening internal controls and operational efficiency.",
       fullDescription: `CA Ajay Satyanarayan Agrawal
@@ -33,9 +34,8 @@ specializations: [
       id: 2,
       name: "CA Niraj Bhaiya",
       title: "B.com, ACA, DISA, Cer. Conc. Auditor",
-      image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww",
-      shortDescription:
+      image:NirajImg,
+       shortDescription:
         "Specializing in data-driven insights and tech-enabled bookkeeping, streamlines financial processes through automation and delivers accurate, actionable reporting.",
       fullDescription: `CA Niraj Kumar Bhaiya
 Partner | Data Analyst & Tech-Driven Financial Insights
@@ -79,9 +79,8 @@ specializations:[
       id: 4,
       name: "CA Shashank Gangil",
       title: "B.com, ACA",
-      image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww",
-      shortDescription:
+      image:ShashankImg,
+     shortDescription:
         "An expert in internal audits, financial reporting, and GST audits, supports businesses in strengthening compliance and ensuring smooth tax assessments.",
       fullDescription: `CA Shashank Gangil
 Associate | Audit & Compliance
