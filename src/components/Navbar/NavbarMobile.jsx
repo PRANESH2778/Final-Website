@@ -43,6 +43,7 @@ const NavbarMobile = ({
             type="button"
             onClick={toggleNavbar}
             aria-expanded={!isCollapsed}
+            style={{marginRight:"20px"}}
           >
             <span className="navbar-toggler-icon"></span>
           </button>

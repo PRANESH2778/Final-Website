@@ -5,7 +5,7 @@ import "./TeamDetails.css";
 import AjayImg from "../../assets/Ajay.jpg";
 import NirajImg from "../../assets/Niraj.jpg";
 import ShashankImg from "../../assets/Shashank.jpg";
-
+import VijayImg from "../../assets/Vijay.jpg";
 
 const TeamDetails = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -40,7 +40,7 @@ const TeamDetails = () => {
           title: "B.com, ACA",
           description:
             "Uttam Patel specializes in international tax, company law matters, IFRS, and related work...",
-          image: "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fHww", // Replace with your API response
+          image: VijayImg, // Replace with your API response
           linkedin: "https://linkedin.com/in/uttampatel",
           email: "uttam@example.com",
           phone: "+91-9876543220",
