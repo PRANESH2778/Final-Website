@@ -21,9 +21,9 @@ const TeamDetails = () => {
           description:
             "Avinash Gupta is a meritorious chartered accountant who graduated with honors in commerce...",
           image: AjayImg, // Replace with your API response
-          linkedin: "https://linkedin.com/in/avinashgupta",
-          email: "avinash@example.com",
-          phone: "+91-9876543210",
+          linkedin: "https://www.linkedin.com/in/ca-ajay-agrawal-427a27124?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          email: "ajagrawal14@gmail.com",
+          phone: "+91-9586737879",
         },
         {
           name: "CA Niraj Bhaiya (Partner)",
@@ -31,9 +31,9 @@ const TeamDetails = () => {
           description:
             "Uttam Patel specializes in international tax, company law matters, IFRS, and related work...",
           image: NirajImg,
-          linkedin: "https://linkedin.com/in/uttampatel",
-          email: "uttam@example.com",
-          phone: "+91-9876543220",
+          linkedin: "https://www.linkedin.com/in/ca-niraj-kumar-bhaiya-307711145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          email: "nk66388@gmail.com",
+          phone: "+91-8012139016",
         },
         {
           name: "CA Vijay Agrawal (partner)",

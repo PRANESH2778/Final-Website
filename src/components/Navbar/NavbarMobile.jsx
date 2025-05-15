@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
 import logoImg from '../../assets/logo2.jpg'
+import logoImg1 from '../../assets/2.svg'
 
 const NavbarMobile = ({
   isCollapsed,
@@ -35,7 +36,7 @@ const NavbarMobile = ({
             Navbar
           </Link> */}
           <Link className="navbar-brand" to="/" onClick={closeNavbar}>
-  <img src={logoImg} alt="Logo" height="50" />
+  <img src={logoImg1} alt="Logo" height="50" />
 </Link>
 
           <button

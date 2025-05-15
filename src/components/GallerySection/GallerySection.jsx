@@ -8,10 +8,7 @@ const GallerySection = () => {
     { src: GalleryImg1, alt: "Gallery Image 1" },
     { src: GalleryImg2, alt: "Gallery Image 2" },
     { src: GalleryImg3, alt: "Gallery Image 3" },
-    { src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFjY291bnRzfGVufDB8fDB8fHww", alt: "Gallery Image 4" },
-    { src: "https://images.unsplash.com/photo-1544761634-dc512f2238a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFjY291bnRzfGVufDB8fDB8fHww", alt: "Gallery Image 5" },
-    { src: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWNjb3VudHN8ZW58MHx8MHx8fDA%3D", alt: "Gallery Image 6" },
-  ];
+    ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
