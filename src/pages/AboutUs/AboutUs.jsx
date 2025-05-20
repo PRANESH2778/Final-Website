@@ -76,7 +76,7 @@ const AboutUs = () => {
           professional, AB & Co. offers a challenging and rewarding work
           environment with continuous learning opportunities.
         </p>
-        <a href="/contactUs" className="read-more-button">Get In Touch</a>
+        <a href="/contactus" className="read-more-button">Get In Touch</a>
       </section>
     </div>
   );
