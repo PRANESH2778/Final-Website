@@ -37,7 +37,7 @@ const NavbarDesktop = ({
         <div className="container">
           {/* <Link className="navbar-brand" to="/" onClick={closeNavbar}>Navbar</Link> */}
           <Link className="navbar-brand" to="/" onClick={closeNavbar}>
-  <img src={logoImg1} alt="Logo" height="50" />
+  <img src={logoImg1} alt="Logo" height="60" />
 </Link>
 
           <div className="navbar-collapse">

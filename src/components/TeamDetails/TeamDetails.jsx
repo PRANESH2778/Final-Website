@@ -41,9 +41,9 @@ const TeamDetails = () => {
           description:
             "Uttam Patel specializes in international tax, company law matters, IFRS, and related work...",
           image: VijayImg, // Replace with your API response
-          linkedin: "https://linkedin.com/in/uttampatel",
-          email: "uttam@example.com",
-          phone: "+91-9876543220",
+          linkedin: "https://www.linkedin.com/in/ca-niraj-kumar-bhaiya-307711145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          email: "vijaysagrawal2013@gmail.com",
+          phone: "+91-9033520822",
         },
         
       ];
