@@ -163,9 +163,30 @@
 
     }
 }
-
+@media (min-width:992px) and (max-width: 1024px) {
+    .slide-text {
+        font-size: 2.5rem;
+        white-space: wrap;
+    }
+    .slide-sub-text {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+    
+}
+@media (min-width:768px) and (max-width: 992px) {
+    .slide-text {
+        font-size: 2.5rem;
+        white-space: wrap;
+    }
+    .slide-sub-text {
+        font-size: 1.2rem;
+        margin-top: 70px;
+    }
+    
+}
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px)  {
     .courosel {
         height: 400px;
         width: 100%;

@@ -48,7 +48,7 @@ const NavbarMobile = ({
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`}>
+          <div className={`collapse navbar-collapse ${isCollapsed ? "" : "show"} mobile-navbar-scroll`}>
             <div className="mobile-contact">
               <p>
                 <FaEnvelope /> <a href="mailto:abandco.surat@gmail.com">abandco.surat@gmail.com</a>

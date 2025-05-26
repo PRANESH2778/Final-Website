@@ -92,64 +92,146 @@ body {
   margin-left: 1rem;
 }
 }
-@media  (min-width: 1024px) and (max-width: 1200px) {
+@media  (min-width: 990px) and (max-width: 1200px) {
   .navbar-nav .nav-item {
   /* margin-right: 15px; */
   margin-left: 0.1rem;
 }
+.navbar-brand img {
+  max-height: 50px;
+ object-fit: contain;
+}
   
 }
 
-/* ---------- TABLET (768px - 1024px) ---------- */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .top-bar {
-    display: flex;
-    padding: 10px 20px;
-    font-size: 13px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
+/* ---------- TABLET (768px - 1024px) ---------- */
+@media (min-width: 768px) and (max-width: 990px) {
+  .top-bar {
+    display: none;
+  }
+.mobile-navbar-scroll {
+  max-height: 80vh;  /* Set based on how much of screen you want used */
+  overflow-y: auto;
+  padding-right: 10px; /* Optional: Prevents hidden scroll bar on some devices */
+}
+
+/* Optional: Prevent body scroll when navbar is open (for mobile UX) */
+body.navbar-open {
+  overflow: hidden;
+}
   .navbar {
-    top: 44px;
+    top: 0;
   }
 
   body {
-    padding-top: 110px;
+    padding-top: 70px;
   }
 
-  .navbar-nav .nav-item {
-    margin-right: 0.2rem;
-    /* margin-left: 0.5rem; */
+  .mobile-contact {
+    padding: 10px;
+    background-color: #003366;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
 
-  .navbar-nav .nav-link {
+  .mobile-contact p {
+    margin: 5px 0;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .navbar-collapse {
-    background-color: white;
-    padding: 10px 0;
+  .mobile-contact svg {
+    margin-right: 5px;
+    color: #ffcc00;
+  }
+
+  .mobile-contact a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-contact a:hover {
+    text-decoration: underline;
   }
 
   .dropdown-menu {
-    position: absolute !important;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .navbar-collapse {
+    width: 100%;
   }
 
   .dropdown-item {
-    padding: 10px 15px;
-  }
-
-  .dropdown-submenu .dropdown-item {
-    color: #333;
-    background-color: white;
+    padding-left: 1.5rem;
+    max-width: 100vw;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
     border-bottom: 1px solid #ddd;
   }
 
+  .dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    border-left: 3px solid #1d438a;
+  }
+
+  .dropdown-submenu .dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+  }
+
   .dropdown-submenu .dropdown-item:hover {
-    background-color: #f2f2f2;
+    background-color: #222;
+  }
+
+  .dropdown-arrow {
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  .mobile-social-icons {
+    margin-top: 10px;
+  }
+
+  .mobile-social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  .mobile-social-icons a:hover {
+    color: #ffcc00;
+  }
+
+  .navbar-brand img {
+    max-height: 35px;
+    margin-left: 1rem;
+  }
+  .navbar-nav .nav-item {
+    /* margin-right: 0.2rem; */
+    margin-left: 1rem;
   }
 }
 
@@ -159,6 +241,18 @@ body {
   .top-bar {
     display: none;
   }
+  /* Navbar.css */
+.mobile-navbar-scroll {
+  max-height: 80vh;  /* Set based on how much of screen you want used */
+  overflow-y: auto;
+  padding-right: 10px; /* Optional: Prevents hidden scroll bar on some devices */
+}
+
+/* Optional: Prevent body scroll when navbar is open (for mobile UX) */
+body.navbar-open {
+  overflow: hidden;
+}
+
 
   .navbar {
     top: 0;
@@ -267,6 +361,11 @@ body {
 
   .navbar-brand img {
     max-height: 35px;
+    margin-left: 1rem;
+  }
+  .navbar-nav .nav-item {
+    /* margin-right: 0.2rem; */
+    margin-left: 1rem;
   }
 }
 
