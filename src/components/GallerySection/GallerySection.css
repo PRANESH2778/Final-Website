@@ -19,20 +19,14 @@
   margin-bottom: 40px;
   line-height: 1.6;
 }
-
-/* Slideshow container */
 .gallery-item-container {
   position: relative;
   width: 100%;
-  height: 500px; /* Adjust as per your preference */
-  aspect-ratio: 3 / 2;
-  max-width: 1200px;
-  margin: auto;
+  aspect-ratio: 3 / 2;         /* ✅ Maintain a consistent shape */
   overflow: hidden;
   border-radius: 10px;
 }
 
-/* Gallery item styling */
 .gallery-item {
   position: absolute;
   top: 0;
@@ -42,11 +36,10 @@
   transition: opacity 1s ease-in-out;
 }
 
-/* Gallery image styling */
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;           /* ✅ Fill container, allow minimal crop */
 }
 
 /* Overlay styling for interactivity */
