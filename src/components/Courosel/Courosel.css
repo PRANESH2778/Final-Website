@@ -6,7 +6,6 @@
     justify-content: center;
     height: 600px; /* Height for larger screens */
     width: 100%; 
-    max-width: 1200px; 
     margin: auto; /* Center the carousel horizontally */
     overflow: hidden; /* Prevents content from overflowing */
 }
