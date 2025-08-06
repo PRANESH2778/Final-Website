@@ -6,7 +6,6 @@
 .about-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: auto;
   align-items: center;
   gap: 40px;
